@@ -1,7 +1,7 @@
 // DEPENDENCIES
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import secretKey from '../secret'
+// import secretKey from '../secret'
 
 // COMPONENT => Display city weather
 const Weather = ({ city }) =>{
