@@ -2,8 +2,9 @@ import React from "react"
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
-const Header = ({}) =>(
-	<Navbar bg='primary' variant='dark' expand='md'>
+const Header = () =>{
+	return(
+<Navbar bg='primary' variant='dark' expand='md'>
 		<Navbar.Brand className="me-4 p-2">
                 Weatheroo
         </Navbar.Brand>
@@ -14,6 +15,8 @@ const Header = ({}) =>(
 		</Navbar.Collapse>
 	</Navbar>
 	)
+	
+	}
 
 
 export default Header

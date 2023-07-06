@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@flydotio/dockerfile": "^0.2.16"
+    "@babel/plugin-proposal-private-property-in-object": "latest"
   }
 }
