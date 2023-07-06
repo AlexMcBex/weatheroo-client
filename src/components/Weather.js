@@ -56,14 +56,14 @@ const Weather = ({ city }) =>{
        Country: {weatherInfo.location.country}<br/>
       Lat: {weatherInfo.location.lat} Lon: {weatherInfo.location.lon}
       <hr/><h4>Condition</h4>
-      <img src={weatherInfo.current.condition.icon}/>{weatherInfo.current.condition.text} <br/>
+      <img src={weatherInfo.current.condition.icon} alt='weather icon'/>{weatherInfo.current.condition.text} <br/>
       <hr/><h4>Temperature</h4>
       { weatherInfo.current.temp_f}°F - feels like { weatherInfo.current.feelslike_f}°F<br/>
       Humidity: {weatherInfo.current.humidity}%
       <hr/><h4>Precipitation</h4>
       Cloud: { weatherInfo.current.cloud}% - Precipitation: { weatherInfo.current.precip_in} in.
       <hr/><h4>Wind</h4>
-      Wind: { weatherInfo.current.wind_mph} -{ weatherInfo.current.gust_mph}  mph  { weatherInfo.current.wind_dir} - <img src={require('../img/arrow.png')} style={{transform: `rotate(${weatherInfo.current.wind_degree}deg)`}}/>
+      Wind: { weatherInfo.current.wind_mph} -{ weatherInfo.current.gust_mph}  mph  { weatherInfo.current.wind_dir} - <img src={require('../img/arrow.png')} alt='arrow' style={{transform: `rotate(${weatherInfo.current.wind_degree}deg)`}}/>
       <hr/><h4>Air Quality</h4>
       UV index: {weatherInfo.current.uv} - Visibility: {weatherInfo.current.vis_miles} miles - Pressure: {weatherInfo.current.pressure_mb} mbar
       </p>
