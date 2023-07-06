@@ -26,7 +26,7 @@ const  App =()=> {
   return (
     <div className="App">
       <Header />
-     <a href='/' className='title'><h1>Weather<img className='sun-o' src={require('./img/sun.png')}/>o</h1></a>
+     <a href='/' className='title'><h1>Weather<img className='sun-o' alt='sun' src={require('./img/sun.png')}/>o</h1></a>
     <UserInput onSubmit={handleCitySubmit}/>
     <Weather city={city}/>
     </div>
