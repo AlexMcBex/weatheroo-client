@@ -28,7 +28,6 @@ const Weather = ({ city }) =>{
         console.log(response.data)
       } catch (error) {
         console.error(error)
-        console.log(apiKey)
         setWeatherInfo(null)
       }
     }
