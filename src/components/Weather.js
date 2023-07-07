@@ -1,7 +1,7 @@
 // DEPENDENCIES
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-const apiKey = process.env.RAPID_API_KEY
+const apiKey = process.env.REACT_APP_RAPID_API_KEY
 
 // COMPONENT => Display city weather
 const Weather = ({ city }) =>{
