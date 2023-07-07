@@ -1,12 +1,14 @@
 // DEPENDENCIES
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-// import secretKey from '../secret'
+const apiKey = process.env.RAPID_API_KEY
 
 // COMPONENT => Display city weather
 const Weather = ({ city }) =>{
   //  state: weather info
   const [weatherInfo, setWeatherInfo] = useState(null)
+
+
 
   // set the city for the axios get
   useEffect(() => {
@@ -17,7 +19,7 @@ const Weather = ({ city }) =>{
           {
             params: { q: city },
             headers: {
-              'X-RapidAPI-Key': process.env.RAPID_API_KEY,
+              'X-RapidAPI-Key': apiKey,
               'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com',
             },
           }
